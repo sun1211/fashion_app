@@ -1,6 +1,7 @@
 import 'package:fashion_app/constants.dart';
 import 'package:fashion_app/models/model.dart';
 import 'package:fashion_app/screen/account/account_screen.dart';
+import 'package:fashion_app/screen/card/card_sreen.dart';
 import 'package:fashion_app/screen/home/home_screen.dart';
 import 'package:fashion_app/screen/location/location_screen.dart';
 import 'package:flutter/material.dart';
@@ -66,6 +67,15 @@ class _FooterState extends State<Footer> {
                         context,
                         MaterialPageRoute(
                           builder: (context) => AccountScreen(),
+                        ),
+                      );
+                      break;
+                    case 3:
+                      print('card screen $index');
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) => CardScreen(),
                         ),
                       );
                       break;

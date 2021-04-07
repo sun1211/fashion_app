@@ -299,23 +299,37 @@ const List historySearches = [
   'Levi’s Jeans'
 ];
 
-const List cartList = [
-  {
-    "img":
-        "https://images.unsplash.com/photo-1495385794356-15371f348c31?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60",
-    "name": "Snoopy T-shirt",
-    "ref": "04559812",
-    "price": "\$40",
-    "size": "S"
-  },
-  {
-    "img":
-        "https://images.unsplash.com/photo-1545291730-faff8ca1d4b0?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60",
-    "name": "American",
-    "ref": "04459811",
-    "price": "\$30",
-    "size": "M"
-  },
+class Cards {
+  final String img;
+  final String name;
+  final String ref;
+  final String price;
+  final String size;
+
+  Cards({
+    this.img,
+    this.name,
+    this.ref,
+    this.price,
+    this.size,
+  });
+}
+
+List<Cards> cartList = [
+  Cards(
+      img:
+          'https://images.unsplash.com/photo-1495385794356-15371f348c31?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60',
+      name: 'Snoopy T-shirt',
+      ref: '04459811',
+      price: '\$30',
+      size: 'M'),
+  Cards(
+      img:
+          'https://images.unsplash.com/photo-1545291730-faff8ca1d4b0?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60',
+      name: 'American',
+      ref: '04459811',
+      price: '\$30',
+      size: 'M')
 ];
 
 List menusMore = [
