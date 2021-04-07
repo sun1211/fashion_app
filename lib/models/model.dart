@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_icons/flutter_icons.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
 const String APP_TITLE = 'SHOP UI';
@@ -345,23 +346,35 @@ List accountList = [
   "Privacy Settings"
 ];
 
-List storeList = [
-  {
-    "img":
-        "https://images.unsplash.com/photo-1507914372368-b2b085b925a1?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60",
-    "name": "Châtelet - Les Halles, Paris",
-    "open": 1
-  },
-  {
-    "img":
-        "https://images.unsplash.com/photo-1546213290-e1b492ab3eee?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60",
-    "name": "Champs-Élysées, Paris",
-    "open": 0
-  },
-  {
-    "img":
-        "https://images.unsplash.com/photo-1555529771-7888783a18d3?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60",
-    "name": "Châtelet - Les Halles, Paris",
-    "open": 1
-  },
+class Store {
+  final String img;
+  final String name;
+  final bool open;
+
+  Store({
+    this.img,
+    this.name,
+    this.open,
+  });
+}
+
+List<Store> storeList = [
+  Store(
+    img:
+        'https://images.unsplash.com/photo-1507914372368-b2b085b925a1?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60',
+    name: 'Châtelet - Les Halles, Paris',
+    open: true,
+  ),
+  Store(
+    img:
+        'https://images.unsplash.com/photo-1546213290-e1b492ab3eee?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60',
+    name: 'Champs-Élysées, Paris',
+    open: false,
+  ),
+  Store(
+    img:
+        'https://images.unsplash.com/photo-1555529771-7888783a18d3?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60',
+    name: 'Châtelet - Les Halles, Paris',
+    open: true,
+  ),
 ];
