@@ -4,6 +4,7 @@ import 'package:fashion_app/screen/account/account_screen.dart';
 import 'package:fashion_app/screen/card/card_sreen.dart';
 import 'package:fashion_app/screen/home/home_screen.dart';
 import 'package:fashion_app/screen/location/location_screen.dart';
+import 'package:fashion_app/screen/more/more_screen.dart';
 import 'package:flutter/material.dart';
 
 class Footer extends StatefulWidget {
@@ -76,6 +77,15 @@ class _FooterState extends State<Footer> {
                         context,
                         MaterialPageRoute(
                           builder: (context) => CardScreen(),
+                        ),
+                      );
+                      break;
+                    case 4:
+                      print('more screen $index');
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) => MoreScreen(),
                         ),
                       );
                       break;
